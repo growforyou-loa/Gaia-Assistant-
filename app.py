@@ -21,19 +21,13 @@ logger = logging.getLogger("gaia")
 # ── Environment ───────────────────────────────────────────────
 GROQ_API_KEY      = os.environ.get("GROQ_API_KEY", "")
 OPENWEATHER_KEY   = os.environ.get("OPENWEATHER_KEY", "")
-GROQ_MODEL        = "llama-3.3-70b-versatile"
+GROQ_MODEL        = "llama-3.1-8b-instant"
 GROQ_ENDPOINT     = "https://api.groq.com/openai/v1/chat/completions"
 ASSISTANT_NAME    = "Gaia"
 OWNER_NAME        = "Gajanan"
 
 # ── Max history turns ──────────────────────────────────────────
 MAX_HISTORY       = 50
-
-# ── StreamElements TTS voice ───────────────────────────────────
-# Options: Brian (British male), Amy (British female), Emma (British female),
-#          Joanna (US female), Matthew (US male), Russell (AU male),
-#          Nicole (AU female), Raveena (Indian female)
-TTS_VOICE         = "Raveena"   # ← change voice here anytime
 
 
 # ╔══════════════════════════════════════════════════════════════════╗
@@ -116,7 +110,7 @@ Use the most appropriate action:
 | none            | Pure information / conversation      | ""                              |
 | open_url        | Open a website                       | Full https:// URL               |
 | search          | Google search                        | Search query string             |
-| call            | Make a phone call                    | Phone number (digits only)      |
+| call            | Make a phone call                    | Phone number/ Name              |
 | send_whatsapp   | Send WhatsApp message                | Phone number (with country code)|
 | send_sms        | Send SMS                             | Phone number                    |
 | alarm           | Set an alarm                         | Time string e.g. "7:30 AM"      |
