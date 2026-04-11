@@ -27,7 +27,7 @@ MAX_HISTORY     = 50
 # ── Dual Endpoint Config ──────────────────────────────────────
 # LOCAL:  your phone running llama-server in Termux
 # GROQ:   cloud fallback when local server is off
-LOCAL_ENDPOINT  = "http://192.168.1.19:8080/v1/chat/completions"
+LOCAL_ENDPOINT  = "http://127.0.0.1:8080/v1/chat/completions"
 LOCAL_MODEL     = "local"
 
 GROQ_ENDPOINT   = "https://api.groq.com/openai/v1/chat/completions"
